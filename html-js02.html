@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 이벤트</title>
+</head>
+<body>
+    
+    <button id="btn"> 클릭해 주세요!</button>
+
+    <script>
+        const btn = document.getElementById("btn"); // btn : event target : event가 일어나야 할 객체
+        btn.addEventListener("click", ()=>{  // addEventListener : event 가 일어날 때까지 기다려라
+            // 버튼을 클릭했을 때~
+            alert("버튼이 클릭 되었습니다.");
+            // 클릭이 됬다면 이런 것들을 해라~~
+        });
+        /* 이게 바로 event
+        1. target
+        2. event 종류
+        3. event가 일어났을 때 해야할 일
+
+        btn.addEventListener("click",               // event listener
+        
+        ()=>{
+
+            alert("버튼이 클릭 되었습니다.");
+        });                                         // event handler
+
+        */
+        
+        // btn.onclick(()=>{}); // 이 코드도 위의 const코드와 동일함. // 위의 코드가 더 어려운 버전
+
+        console.log("1" + 1);  // 11
+        console.log(parseInt("1") + 1);  // 2
+        // 이거 확인은 크롬 F12
+        
+    </script>
+
+</body>
+</html>
