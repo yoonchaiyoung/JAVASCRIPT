@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리 만들기</title>
+    <script>
+        const imageList = [
+        "https://lh3.googleusercontent.com/proxy/QyQqPpU6TG43003V9ybf_36u8Wkf_pN1FS71Q59ePDKPO0SLVRcZlfWUN4yRlrVgrKpdqTFluXtqZ0xuOYJC9DOk9bovlH_ofUSi1Eb6fPTBDSsamEdnTrMaFXDdG-Lj7xtyQXblFtNmBq7yY1iuMkhEHBI_YjVgsrIQJ2zXZiAkU-fYxgGAdc96lvtlPIm5RkPK1GTN9U6dMve6ENhxI5QcfjcqC9MhAMVpsSEWW2DGOGrvDnO0G9IQowTroF-YtDK4mW4R-GRpO4TIwf1-Xo93ezDacqU5GoOwK7Z8X9FP3NaT7GHMx8D7qeo_Udq4HXIXfhI",
+        "https://thumbnail.10x10.co.kr/webimage/image/basic600/262/B002626948.jpg?cmd=thumb&w=500&h=500&fit=true&ws=false",
+        "https://m.kirakiratomo.com/web/product/big/20191209/7e4c551dfc799d2dbc3371aebe764d13.png",
+        "https://lh3.googleusercontent.com/proxy/1ggMBBSKqNjhw1nbxneHtQG33vgSZqPQeO-zweJZQuOqblrSS83afmGvC4s81sRJSiC8CZN-nO5hBqPUQzP460ANS0uWD8fyY4jwtnIcNSC0V-lbXGHp"
+        ];
+    </script>
+</head>
+<body>
+    <img src="#" id="gallery" />  
+    <!-- gallery.src로 경로 잡아줄꺼니까 src 없어도 됨. 그런데 그냥 의미상 적어준거라서 #을 적어준 것. 그냥 src 안 적고 id만 적어줘도 됨.-->
+    <script>
+        const gallery = document.getElementById("gallery");
+        gallery.src = imageList[0];
+    </script>
+
+</body>
+</html>

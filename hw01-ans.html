@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="dan"/>
+    <button id="btn">클릭해 주세요!</button>
+    <script>
+        const btn = document.getElementById("btn");
+        const danInput = document.getElementById("dan");
+
+        btn.addEventListener("click", () => {
+            const dan = parseInt(danInput.value);
+            for(let i=1; i<10; i++){
+                console.log(dan, "*", i, "=", dan*i);
+            }
+        });
+    </script>
+</body>
+</html>

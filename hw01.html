@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="temp-input" value="몇 단을 할까요?">
+    <!-- 몇 단을 할 지 숫자 입력 받기 -->
+    <button id="btn">클릭!</button>
+    <!-- 버튼 만들기 -->
+    <script>
+        const btn = document.getElementById("btn");
+        const bodyTempInput = document.getElementById("temp-input");
+        
+        btn.addEventListener("click", ()=>{
+            // event 참조 : https://developer.mozilla.org/ko/docs/Web/Events
+            // target.addEventListner(type, listner);
+
+        console.log(parseInt(bodyTempInput.value),"x1=",parseInt(bodyTempInput.value)*1);
+        console.log(parseInt(bodyTempInput.value),"x2=",parseInt(bodyTempInput.value)*2);
+        console.log(parseInt(bodyTempInput.value),"x3=",parseInt(bodyTempInput.value)*3);
+        console.log(parseInt(bodyTempInput.value),"x4=",parseInt(bodyTempInput.value)*4);
+        console.log(parseInt(bodyTempInput.value),"x5=",parseInt(bodyTempInput.value)*5);
+        console.log(parseInt(bodyTempInput.value),"x6=",parseInt(bodyTempInput.value)*6);
+        console.log(parseInt(bodyTempInput.value),"x7=",parseInt(bodyTempInput.value)*7);
+        console.log(parseInt(bodyTempInput.value),"x8=",parseInt(bodyTempInput.value)*8);
+        console.log(parseInt(bodyTempInput.value),"x9=",parseInt(bodyTempInput.value)*9);
+
+        });
+        
+        </script>
+</body>
+</html>
